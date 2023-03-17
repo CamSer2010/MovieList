@@ -2,7 +2,21 @@
 <component name = "mainScene" extends = "Scene">
     <script type = "text/brightscript" uri="mainScene.brs" />
     <children>
-     
+        <poster
+            id="background"
+            width="1280"
+            height="720"
+            uri="pkg:/images/white.png" />
+
+        <layoutGroup
+            id="list"
+            itemSpacings="[10]"
+            horizAlignment="center"
+            translation="[640, 100]" >
+            <listItem id="listItem1" />
+            <listItem id="listItem2" />
+            <listItem id="listItem3" />
+        </layoutGroup >
     </children>
 
 </component>

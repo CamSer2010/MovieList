@@ -1,0 +1,69 @@
+<?xml version = "1.0" encoding = "utf-8" ?> 
+<component name = "listItem" extends = "Group">
+    <script type = "text/brightscript" uri="listItem.brs" />
+    <children>
+
+        <Rectangle
+            id="focusRing"
+            visible="false"
+            width="762"
+            height="222"
+            color="0x000000" />
+
+        <layoutGroup 
+            id="dataGroup"
+            layoutDirection="horiz"
+            translation="[6, 6]">
+
+            <Poster
+                id="thumbnail"
+                width="375"
+                height="210"
+                uri="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg" />
+
+            <Rectangle 
+                id="gradient"
+                width="375"
+                height="210"
+                color="0xFFFFFF"
+                opacity="0.8" >
+
+                <layoutGroup
+                    id="metadataGroup"
+                    layoutDirection="vert"
+                    itemSpacings="[5, 30]"
+                    translation="[6, 6]">
+
+                    <Label 
+                        id ="title" 
+                        width="350"
+                        font="font:SmallBoldSystemFont"
+                        text="Big Buck Bunny"
+                        horizAlign="left"
+                        vertAlign="center"
+                        color="0x000000" />
+                    
+                    <Label 
+                        id="subtitle"
+                        width="350"
+                        font="font:SmallestBoldSystemFont"
+                        text="By Blender Foundation"
+                        horizAlign="left"
+                        vertAlign="center"
+                        color="0x000000" />
+
+                    <Label 
+                        id ="description" 
+                        width="360"
+                        height="130"
+                        font="font:SmallestSystemFont"
+                        text="Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.\n\nLicensed under the Creative Commons Attribution license\nhttp://www.bigbuckbunny.org"
+                        horizAlign="left"
+                        vertAlign="center"
+                        color="0x000000"
+                        wrap="true" />
+                </layoutGroup>  
+            </Rectangle>  
+        </layoutGroup> 
+    </children>
+</component>
