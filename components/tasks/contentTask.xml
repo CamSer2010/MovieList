@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "contentTask" extends = "Task" >
+
+    <interface>
+        <field id="response" type="assocarray" />
+        <field id="error" type="boolean" />
+    </interface>
+
+    <script type="text/brightscript" uri="contentTask.brs" />
+
+</component>
