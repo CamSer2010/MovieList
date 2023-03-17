@@ -12,11 +12,16 @@
             id="list"
             itemSpacings="[10]"
             horizAlignment="center"
-            translation="[640, 100]" >
-            <listItem id="listItem1" />
-            <listItem id="listItem2" />
-            <listItem id="listItem3" />
-        </layoutGroup >
-    </children>
+            translation="[640, 30]" >
 
+            <Label 
+                id ="header" 
+                font="font:LargeBoldSystemFont"
+                width="120"
+                height="50"
+                horizAlign="center"
+                vertAlign="center"
+                color="0x000000" />
+        </layoutGroup>
+    </children>
 </component>
